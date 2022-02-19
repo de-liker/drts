@@ -1,6 +1,6 @@
 # pkg `drts`
 
-`drts` is DE LIKER's TypeScript + React style guide. Inspired by [google/gts](https://github.com/google/gts).
+`drts` is DE LIKER's TypeScript and React style guide. Inspired by [google/gts](https://github.com/google/gts).
 
 ## Installation
 
