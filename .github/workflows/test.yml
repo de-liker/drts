@@ -1,0 +1,35 @@
+name: test-web
+
+on:
+  push:
+    # branches-ignore:
+    #   - "main"
+    paths:
+      - ".github/workflows/test.yml"
+      - "**"
+
+jobs:
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Get dependencies
+        run: |
+          yarn install
+
+      - name: Test
+        run: |
+          yarn test
