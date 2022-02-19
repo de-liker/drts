@@ -2,7 +2,19 @@
   "extends": [
     "config:base"
   ],
-  "pinVersions": false,
+  "packageRules": [{
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "rangeStrategy": "pin"
+    }
+  ],
   "rebaseStalePrs": true,
   "lockFileMaintenance": {
     "enabled": true,
