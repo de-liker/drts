@@ -1,4 +1,4 @@
-name: test-web
+name: test
 
 on:
   push:
