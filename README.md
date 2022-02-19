@@ -2,6 +2,8 @@
 
 `drts` is DE LIKER's TypeScript and React style guide. Inspired by [google/gts](https://github.com/google/gts).
 
+![test](../../actions/workflows/test.yml/badge.svg)
+
 ## Installation
 
 ```
