@@ -17,6 +17,9 @@ globals:
   SharedArrayBuffer: readonly
 
 rules:
+  array-element-newline:
+    - error
+    - consistent
   object-curly-spacing:
     - 2
     - always
