@@ -1,0 +1,9 @@
+{
+  "name": "@de-liker/drts",
+  "version": "0.1.0",
+  "description": "DE LIKER's TypeScript and React style guide",
+  "main": ".eslintrc.yml",
+  "repository": "git@github.com:de-liker/drts.git",
+  "author": "Qs-F <qsf@de-liker.com>",
+  "license": "MIT"
+}
