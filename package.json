@@ -1,6 +1,6 @@
 {
   "name": "@de-liker/drts",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "DE LIKER's TypeScript and React style guide",
   "main": ".eslintrc.yml",
   "repository": "https://github.com/de-liker/drts",
