@@ -14,6 +14,11 @@ yarn add --dev @de-liker/drts
 
 In your `.eslintrc.yml`, please extend `@de-liker/drts`. Example usage is shown in `/examples/basic/.eslintrc.yml`.
 
+```yaml
+extends:
+  - "./node_modules/@de-liker/drts"
+  ```
+
 ## Author
 
 Qs-F
