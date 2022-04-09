@@ -31,6 +31,14 @@ rules:
   quote-props:
     - error
     - as-needed
+  max-len:
+    - error
+    - code: 160
+      ignoreComments: true
+      ignoreTrailingComments: true
+      ignoreUrls: true
+      ignoreTemplateLiterals: true
+      ignoreRegExpLiterals: true
   react/prop-types: "off"
   react/jsx-uses-react: "off"
   react/react-in-jsx-scope: "off"
