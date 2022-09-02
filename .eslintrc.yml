@@ -2,9 +2,7 @@ env:
   browser: true
   es6: true
   node: true
-
 root: true
-
 extends:
   - "eslint:recommended"
   - "plugin:@typescript-eslint/recommended"
@@ -13,11 +11,9 @@ extends:
   - "plugin:import/errors"
   - "plugin:import/warnings"
   - "plugin:import/typescript"
-
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
-
 rules:
   array-element-newline:
     - error
@@ -42,6 +38,7 @@ rules:
   react/prop-types: "off"
   react/jsx-uses-react: "off"
   react/react-in-jsx-scope: "off"
+  react/display-name: "off"
   no-unused-vars: "off"
   "@typescript-eslint/no-unused-vars":
     - error
@@ -74,15 +71,13 @@ rules:
       alphabetize:
         order: "asc"
         caseInsensitive: true
-
 settings:
   react:
     version: "detect"
   import/resolver:
     typescript:
-
 overrides:
   - files:
-    - "*.d.ts"
+      - "*.d.ts"
     rules:
       "@typescript-eslint/no-explicit-any": "off"
