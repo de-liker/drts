@@ -71,6 +71,9 @@ rules:
       alphabetize:
         order: "asc"
         caseInsensitive: true
+  import/namespace:
+    - 2
+    - allowComputed: true
 settings:
   react:
     version: "detect"
