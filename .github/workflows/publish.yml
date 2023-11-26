@@ -28,11 +28,11 @@ jobs:
 
       - name: Get dependencies
         run: |
-          yarn install
+          npm ci
 
       - name: Test
         run: |
-          yarn test
+          npm run test
 
       - name: Check Version Consistency
         run: |
@@ -44,6 +44,6 @@ jobs:
 
       - name: Publish
         run: |
-          yarn publish --access public
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
