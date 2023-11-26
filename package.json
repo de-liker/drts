@@ -1,13 +1,16 @@
 {
   "name": "@de-liker/drts",
   "version": "2.0.0",
+  "type": "module",
   "description": "DE LIKER's TypeScript and React style guide",
   "main": "eslint.config.js",
   "repository": "https://github.com/de-liker/drts",
   "author": "Qs-F <qsf@de-liker.com>",
   "scripts": {
-    "test:publish:buildable:install": "yarn --cwd ./examples/basic install",
-    "test:publish:buildable:lint": "yarn --cwd ./examples/basic lint",
+    "lint": "eslint .",
+    "fmt": "eslint --fix .",
+    "test:publish:buildable:install": "npm install --prefix ./examples/basic",
+    "test:publish:buildable:lint": "npm run --prefix ./examples/basic lint",
     "test:publish": "run-s test:publish:**",
     "test": "run-p test:*"
   },
