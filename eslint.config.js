@@ -12,11 +12,9 @@ export default [
     ignores: ['dist/**/*'],
   })),
   {
-    files: ['**/*.ts', '**/*.tsx'],
-    ignores: ['dist/**/*'],
-    languageOptions: {
-      parser: tsParser,
-    },
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    ignores: ['dist/**/*', 'node_modules/**/*'],
+    languageOptions: { parser: tsParser },
     plugins: {
       '@typescript-eslint': ts,
       import: importPlugin,
@@ -25,19 +23,15 @@ export default [
     rules: {
       ...ts.configs['recommended'].rules,
       ...ts.configs['eslint-recommended'].rules,
-      semi: ['error', 'never'],
-      quotes: ['error', 'single'],
-      'require-jsdoc': 'off',
-      'max-len': [
-        'error', {
-          code: 160,
-          ignoreComments: true,
-          ignoreTrailingComments: true,
-          ignoreUrls: true,
-          ignoreTemplateLiterals: true,
-          ignoreRegExpLiterals: true,
-        },
+      semi: [
+        'error',
+        'never',
       ],
+      quotes: [
+        'error',
+        'single',
+      ],
+      'require-jsdoc': 'off',
       'array-element-newline': [
         'error',
         'consistent',
@@ -45,6 +39,12 @@ export default [
       'object-curly-spacing': [
         'error',
         'always',
+      ],
+      'object-curly-newline': [
+        'error',
+        {
+          consistent: true,
+        },
       ],
       'quote-props': [
         'error',
@@ -67,9 +67,7 @@ export default [
       'import/no-named-as-default-member': 'off',
       'import/namespace': [
         'off',
-        {
-          allowComputed: true,
-        },
+        { allowComputed: true },
       ],
       'import/order': [
         'error',
