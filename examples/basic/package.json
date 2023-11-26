@@ -3,9 +3,17 @@
   "private": true,
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "fmt": "eslint --fix .",
+    "test": "run-p lint"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@de-liker/drts": "../../",
+    "eslint": "^8.54.0",
+    "react": "^18.2.0"
+  }
 }
