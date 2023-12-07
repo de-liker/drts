@@ -1,6 +1,6 @@
 {
   "name": "@de-liker/drts",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "type": "module",
   "description": "DE LIKER's TypeScript and React style guide",
   "main": "eslint.config.js",
@@ -23,10 +23,10 @@
     "eslint-plugin-react": "7.33.2"
   },
   "devDependencies": {
-    "@changesets/cli": "2.26.2",
-    "eslint": "8.40.0",
+    "@changesets/cli": "2.27.1",
+    "eslint": "8.55.0",
     "npm-run-all": "4.1.5",
-    "typescript": "5.0.4"
+    "typescript": "5.3.3"
   },
   "peerDependencies": {
     "eslint": "^8.50.0",
