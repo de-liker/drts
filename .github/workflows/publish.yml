@@ -1,4 +1,4 @@
-name: release
+name: publish
 
 on:
   push:
@@ -9,8 +9,8 @@ on:
 
 jobs:
 
-  release:
-    name: Release
+  publish:
+    name: publish
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -20,30 +20,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Get dependencies
-        run: |
+      - run: |
           npm ci
 
-      - name: Test
-        run: |
+      - run: |
           npm run test
 
-      - name: Check Version Consistency
-        run: |
+      - run: |
           sudo apt update
           sudo apt install -y jq
           V1=$(cat package.json | jq .version | sed -e "s/\"//g" | sed -e "s/^/v/")
           V2=${GITHUB_REF#refs/tags/}
           test $V1 = $V2
 
-      - name: Publish
-        run: |
+      - run: |
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
