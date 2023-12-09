@@ -6,6 +6,7 @@
   "repository": "https://github.com/de-liker/drts",
   "author": "Qs-F <qsf@de-liker.com>",
   "scripts": {
+    "publish": "changeset publish",
     "test:publish:buildable:install": "yarn --cwd ./examples/basic install",
     "test:publish:buildable:lint": "yarn --cwd ./examples/basic lint",
     "test:publish": "run-s test:publish:**",
