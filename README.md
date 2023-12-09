@@ -12,16 +12,20 @@ yarn add --dev @de-liker/drts
 
 ## Usage
 
-In your `.eslintrc.yml`, please extend `@de-liker/drts`. Example usage is shown in `/examples/basic/.eslintrc.yml`.
+In your `eslint.config.js`, please extend `@de-liker/drts`. Example usage is shown in `/examples/basic/eslint.config.js`.
 
-```yaml
-extends:
-  - "./node_modules/@de-liker/drts"
-  ```
+```js
+import drts from '@de-liker/drts'
+
+
+export default [
+  ...drts,
+]
+```
 
 ## Author
 
-Qs-F
+Qs-F, DE LIKER
 
 ## License
 

@@ -5,3 +5,4 @@
 !./LICENSE
 !./README.md
 !./.eslintrc.yml
+!./eslint.config.js

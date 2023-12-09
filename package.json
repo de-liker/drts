@@ -1,24 +1,27 @@
 {
   "name": "@de-liker/drts",
   "version": "0.1.19",
+  "type": "module",
   "description": "DE LIKER's TypeScript and React style guide",
-  "main": ".eslintrc.yml",
+  "main": "eslint.config.js",
   "repository": "https://github.com/de-liker/drts",
   "author": "Qs-F <qsf@de-liker.com>",
   "scripts": {
     "publish": "changeset publish",
-    "test:publish:buildable:install": "yarn --cwd ./examples/basic install",
-    "test:publish:buildable:lint": "yarn --cwd ./examples/basic lint",
+    "lint": "eslint .",
+    "fmt": "eslint --fix .",
+    "test:publish:buildable:install": "npm install --prefix ./examples/basic",
+    "test:publish:buildable:lint": "npm run --prefix ./examples/basic lint",
     "test:publish": "run-s test:publish:**",
     "test": "run-p test:*"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-import-resolver-typescript": "^3.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-react": "^7.28.0"
+    "@typescript-eslint/eslint-plugin": "6.7.3",
+    "@typescript-eslint/parser": "6.7.3",
+    "eslint-config-google": "0.14.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.28.1",
+    "eslint-plugin-react": "7.33.2"
   },
   "devDependencies": {
     "@changesets/cli": "2.27.1",
@@ -27,7 +30,7 @@
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "eslint": "^8.40.0",
+    "eslint": "^8.50.0",
     "typescript": "^5.0.0"
   },
   "license": "MIT"
