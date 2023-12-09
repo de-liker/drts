@@ -1,5 +1,0 @@
----
-"@de-liker/drts": patch
----
-
-chore(deps): update dependency typescript to v5.3.3
