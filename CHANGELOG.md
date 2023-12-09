@@ -1,5 +1,16 @@
 # @de-liker/drts
 
+## 1.0.0
+
+### Major Changes
+
+- 16a0e53: Update to support flat config
+
+### Patch Changes
+
+- d8ce42e: fix(deps): update typescript-eslint monorepo to v6.13.2
+- e02d152: fix(deps): update dependency eslint-plugin-import to v2.29.0
+
 ## 0.1.19
 
 ### Patch Changes
