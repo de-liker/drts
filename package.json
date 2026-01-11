@@ -24,7 +24,7 @@
     "eslint-plugin-react": "7.33.2"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.2",
+    "@changesets/cli": "2.29.8",
     "eslint": "8.57.1",
     "npm-run-all2": "8.0.4",
     "typescript": "5.8.3"
