@@ -1,5 +1,11 @@
 # @de-liker/drts
 
+## 1.0.1
+
+### Patch Changes
+
+- 2745188: chore(deps): lock file maintenance
+
 ## 1.0.0
 
 ### Major Changes
