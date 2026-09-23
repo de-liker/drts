@@ -7,7 +7,6 @@
   "repository": "https://github.com/de-liker/drts",
   "author": "Qs-F <qsf@de-liker.com>",
   "scripts": {
-    "publish": "changeset publish",
     "lint": "eslint .",
     "fmt": "eslint --fix .",
     "test:publish:buildable:install": "npm install --prefix ./examples/basic",
@@ -24,7 +23,6 @@
     "eslint-plugin-react": "7.33.2"
   },
   "devDependencies": {
-    "@changesets/cli": "2.29.2",
     "eslint": "8.57.1",
     "npm-run-all2": "8.0.4",
     "typescript": "5.8.3"
