@@ -1,5 +1,12 @@
 # @de-liker/drts
 
+## [v2.0.1](https://github.com/de-liker/drts/compare/v2.0.0...v2.0.1) - 2026-09-23
+
+- chore(deps): update dependency node to v24 by @renovate[bot] in https://github.com/de-liker/drts/pull/160
+- chore(deps): update actions/checkout action to v7 by @renovate[bot] in https://github.com/de-liker/drts/pull/161
+- chore(deps): update actions/setup-node action to v7 by @renovate[bot] in https://github.com/de-liker/drts/pull/165
+- docs: npm 12 で必要な .npmrc の説明を追記 by @Qs-F in https://github.com/de-liker/drts/pull/168
+
 ## [v2.0.0](https://github.com/de-liker/drts/compare/v1.0.1...v2.0.0) - 2026-09-23
 
 - Biomeに乗り換え・リポジトリからのリリースのみに変更 by @Qs-F in https://github.com/de-liker/drts/pull/162
