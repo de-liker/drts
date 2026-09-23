@@ -1,35 +1,26 @@
 {
-  "name": "@de-liker/drts",
-  "version": "1.0.1",
-  "type": "module",
-  "description": "DE LIKER's TypeScript and React style guide",
-  "main": "eslint.config.js",
-  "repository": "https://github.com/de-liker/drts",
-  "author": "Qs-F <qsf@de-liker.com>",
-  "scripts": {
-    "lint": "eslint .",
-    "fmt": "eslint --fix .",
-    "test:publish:buildable:install": "npm install --prefix ./examples/basic",
-    "test:publish:buildable:lint": "npm run --prefix ./examples/basic lint",
-    "test:publish": "run-s test:publish:**",
-    "test": "run-p test:*"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "8.30.1",
-    "@typescript-eslint/parser": "8.30.1",
-    "eslint-config-google": "0.14.0",
-    "eslint-import-resolver-typescript": "4.3.3",
-    "eslint-plugin-import": "2.29.0",
-    "eslint-plugin-react": "7.33.2"
-  },
-  "devDependencies": {
-    "eslint": "8.57.1",
-    "npm-run-all2": "8.0.4",
-    "typescript": "5.8.3"
-  },
-  "peerDependencies": {
-    "eslint": "^8.50.0",
-    "typescript": "^5.0.0"
-  },
-  "license": "MIT"
+	"name": "@de-liker/drts",
+	"version": "1.0.1",
+	"type": "module",
+	"description": "DE LIKER's TypeScript and React style guide",
+	"repository": "https://github.com/de-liker/drts",
+	"author": "Qs-F <qsf@de-liker.com>",
+	"exports": {
+		"./biome": "./biome.json"
+	},
+	"files": [
+		"biome.json"
+	],
+	"scripts": {
+		"lint": "biome check ./",
+		"fmt": "biome check --write ./",
+		"test": "npm run lint"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.14"
+	},
+	"peerDependencies": {
+		"@biomejs/biome": "^2.5.0"
+	},
+	"license": "MIT"
 }
