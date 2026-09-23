@@ -1,5 +1,9 @@
 # @de-liker/drts
 
+## [v2.0.0](https://github.com/de-liker/drts/compare/v1.0.1...v2.0.0) - 2026-09-23
+
+- Biomeに乗り換え・リポジトリからのリリースのみに変更 by @Qs-F in https://github.com/de-liker/drts/pull/162
+
 ## [v1.0.1](https://github.com/de-liker/drts/compare/v1.0.0...v1.0.1) - 2026-09-23
 
 - chore(deps): lock file maintenance by @renovate[bot] in https://github.com/de-liker/drts/pull/130
