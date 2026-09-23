@@ -23,7 +23,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
 
       # Consumers pin a tag, so a release is just the `vX.Y.Z` tag that merging
       # the release pull request pushes. Nothing is published to npm.
