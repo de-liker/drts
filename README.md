@@ -12,6 +12,17 @@ This package is not published to npm. Install it straight from GitHub, pinned to
 npm install --save-dev github:de-liker/drts#v2.0.0 @biomejs/biome
 ```
 
+npm 12 refuses git dependencies by default, so that install fails with `EALLOWGIT`
+until the project opts in. Commit an `.npmrc` next to your `package.json`:
+
+```
+allow-git=root
+```
+
+`root` permits the git dependencies your own `package.json` declares, and keeps
+transitive ones blocked. Skipping this breaks every environment running npm 12,
+including CI and hosted build platforms, while npm 11 installs fine.
+
 That writes the dependency as `"@de-liker/drts": "github:de-liker/drts#v2.0.0"`, and the
 lockfile records the exact commit the tag points at. Renovate opens a PR when a newer
 tag is published.
