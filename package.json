@@ -17,7 +17,7 @@
 		"test": "npm run lint"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.14"
+		"@biomejs/biome": "2.6.3"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "^2.5.0"
